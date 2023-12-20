@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background-table-header: 76 171 76  ;
+    --background-table-header-popup: 36 83 2;
+    --background-btn-primary: 228 196 246 ;
+    --background-btn-secondry: 200 70 55;
+  }
+}
+
+
+button:active{
+  transform: scale(1.02);
+}
+
+tbody tr:nth-child(even){
+  background-color: rgb(237, 250, 237);
+}
+tr td:last-child{
+  background-color: white;
+}
+.tabel-add-btn{
+  background-color: rgb(228 ,196 ,246) !important;
+}
+
+#modal{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  animation: fade-slide-in-from-top 0.3s ease-in-out;
+}
+#modal::backdrop{
+  background: rgba(0, 0, 0, 0.65);
+}
+@keyframes fade-slide-in-from-top {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+
